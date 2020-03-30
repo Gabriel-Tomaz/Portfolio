@@ -15,7 +15,12 @@
   width: 50%;
   text-align: center;
   color: #313131;
-  font-size: 1.1em;
+  font-size: 1.05em;
+  text-decoration: none;
+}
+.desc-home-link{
+  color: #009688;
+  cursor: pointer;
 }
 .contato{
   width: 20%;
@@ -32,4 +37,7 @@
 .icon:hover{
   fill: #009688;
   transform: scale(1.02);
+}
+a{
+  text-decoration: none;
 }

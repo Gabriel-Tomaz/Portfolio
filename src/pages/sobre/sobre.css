@@ -1,12 +1,25 @@
 .sobre{
-  width: 50%;
+  width: 60%;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: #313131;
 }
 .desc-sobre{
   width: 90%;
   text-align: center;
+  font-size: 1.2em;
+}
+.react{
+  color: #52c3e2;
+  cursor: pointer;
+}
+.unsplash{
+  cursor: pointer;
+}
+.github{
+  color: #7E57C2;
+  cursor: pointer;
 }

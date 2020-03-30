@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaInstagram,FaFacebookSquare,FaEnvelope,FaGithub,FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import './home.css'; 
 import TopBar from '../../components/TopBar';
@@ -21,21 +22,27 @@ export default function Home(){
       <TopBar />
       <div className="imgPerfil"></div>
       <h1 className="title">Gabriel Tomaz</h1>
-      <p className="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi dicta at veniam, in eaque culpa consequuntur quasi ullam cum. Corrupti reiciendis dignissimos animi laborum veniam doloribus sunt quidem, quam quo!</p>
+      <p className="desc">
+          Olá meu nome é Gabriel e esse é o meu portfólio de fotografias autorais, 
+        eu o desenvolvi como uma forma de aplicar conhecimentos na minha área de estudos e 
+        expor um pouco desse meu hobby que é a fotografia com o smarphone. 
+        Então fique a vontade para explorar a aba das <Link to='/fotografias'><b className='desc-home-link'>fotos</b></Link>, 
+        e para conhecer um pouco mais o site acesse a página <Link to='/sobre'><b className='desc-home-link'>sobre</b></Link>.
+      </p>
       <div className="contato">
-        <a onClick={() => abrirLink(instagramLink)}>
+        <a onClick={() => abrirLink(instagramLink)} title='Instagram'>
           <FaInstagram color="#BDBDBD" size={30} className="icon"/>
         </a>
-        <a onClick={() => abrirLink(facebookLink)}>
+        <a onClick={() => abrirLink(facebookLink)} title='Facebook'>
           <FaFacebookSquare color="#BDBDBD" size={30} className="icon" />
         </a>
-        <a onClick={() => {abrirLink(email)}}>
+        <a onClick={() => {abrirLink(email)}} title='Gmail'>
           <FaEnvelope color="#BDBDBD" size={30} className="icon" />
         </a>
-        <a onClick={() => abrirLink(githubLink)}>
+        <a onClick={() => abrirLink(githubLink)} title='Github'>
           <FaGithub color="#BDBDBD" size={30} className="icon" />
         </a>
-        <a onClick={() => abrirLink(linkedinLink)}>
+        <a onClick={() => abrirLink(linkedinLink)} title='Linkedin'>
           <FaLinkedinIn color="#BDBDBD" size={30} className="icon" />
         </a>
       </div>
