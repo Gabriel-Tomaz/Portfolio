@@ -1,0 +1,32 @@
+.galeria{
+  width: 80%;
+  height: 82vh;
+  overflow: auto;
+}
+.title-galeria{
+  font-size: 1.8em;
+  margin-top: 15px;
+  color: #313131;
+  border-radius: 1px;
+  width: 97%;
+  margin-bottom: 10px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-foto{
+  height: 50vh;
+  flex-grow: 1;
+}
+
+.card-foto:last-child{
+  flex-grow: 10;
+}
+.card-foto img{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}

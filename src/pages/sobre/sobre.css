@@ -1,0 +1,12 @@
+.sobre{
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.desc-sobre{
+  width: 90%;
+  text-align: center;
+}
