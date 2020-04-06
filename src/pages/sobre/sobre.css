@@ -1,25 +1,26 @@
 .sobre{
-  width: 60%;
-  height: 300px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  color: #313131;
+  background-color: rgba(0,0,0,0.8);
+  color: #FFF;
+}
+.title-sobre{
+  margin: 25px;
 }
 .desc-sobre{
-  width: 90%;
+  width: 70%;
   text-align: center;
   font-size: 1.2em;
 }
-.react{
-  color: #52c3e2;
+b{
   cursor: pointer;
 }
-.unsplash{
-  cursor: pointer;
-}
-.github{
-  color: #7E57C2;
-  cursor: pointer;
+.rodape-sobre{
+  position: fixed;
+  bottom: 10px;
+  font-size: 0.9em;
 }

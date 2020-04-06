@@ -1,15 +1,33 @@
-.galeria{
-  width: 80%;
-  height: 82vh;
-  overflow: auto;
+.fotografias{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.title-galeria{
-  font-size: 1.8em;
-  margin-top: 15px;
-  color: #313131;
-  border-radius: 1px;
-  width: 97%;
-  margin-bottom: 10px;
+.topBarFotos{
+  width: 95%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 10px;
+}
+.title-page{
+  font-size: 1.6em;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.back-icon{
+  cursor: pointer;
+}
+.galeria{
+  width: 95%;
+  overflow:auto;
+  margin-top: 80px;
 }
 ul{
   list-style: none;
@@ -17,8 +35,9 @@ ul{
   flex-wrap: wrap;
 }
 .card-foto{
-  height: 50vh;
+  height:50vh;
   flex-grow: 1;
+  margin: 2px;
 }
 
 .card-foto:last-child{
@@ -26,7 +45,21 @@ ul{
 }
 .card-foto img{
   max-height: 100%;
-  max-width: 100%;
+  min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #E0E0E0;
+}
+
+::-webkit-scrollbar{
+  width: 2px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #BDBDBD;
+  border-radius: 2px;
 }

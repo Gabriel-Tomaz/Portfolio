@@ -1,13 +1,13 @@
 import React, { useState,useEffect } from 'react';
+import { MdKeyboardArrowLeft } from 'react-icons/md';
+import { Link } from 'react-router-dom'
 
 import api from '../../services/api';
 import './fotografias.css';
-import TopBar from '../../components/TopBar';
-import Rodape from '../../components/Rodape';
 
 export default function Fotografias(){
   const [fotos,setFotos] = useState([]);
-  const apiUrl ='users/negoh_jpg/photos/';
+  const apiUrl ='users/negoh_jpg/photos/?client_id=D0LBzLz8h7rEBO9VM2sMeJefIQfaeq4IHBxNmH7_is';
 
   useEffect(() => {
     api.get(apiUrl).then(response => {
@@ -17,18 +17,23 @@ export default function Fotografias(){
 
   return(
     <div className="main">
-        <TopBar/>
+      <section className="fotografias">
+        <div className="topBarFotos">
+          <Link to="/">
+            <MdKeyboardArrowLeft size="60px" color="#000" className="back-icon" />
+          </Link>
+          <p className="title-page">fotografias</p>
+        </div>
         <div className="galeria">
-          <h1 className="title-galeria">Fotografias</h1>
           <ul>
             { fotos.map( foto => (
               <li key={ foto.id } className='card-foto'>
-                <img src={ foto.urls.small } alt={foto.description}/>
+                <img src={ foto.urls.regular } alt={foto.description} loading="lazy"/>
               </li>
             )) }
           </ul>
         </div>
-        <Rodape/>
+      </section>
     </div>
   );
 }
