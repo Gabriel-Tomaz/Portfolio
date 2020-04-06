@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { DropdownButton,Dropdown } from 'react-bootstrap';
 
-import './home.css'; ;
+import './home.css';
+import MenuMobile from '../../components/menuMobile';
 
 export default function Home(){
   const instagramLink = 'https://www.instagram.com/negoh.css/';
@@ -25,13 +27,14 @@ export default function Home(){
               <p>Sobre</p>
             </Link>
           </div>
+          <MenuMobile/>
         </div>
         <p className="desc">
             Olá meu nome é Gabriel e esse é o meu portfólio de fotografias autorais, 
           eu o desenvolvi como uma forma de aplicar conhecimentos na minha área de estudos e 
           expor um pouco desse meu hobby que é a fotografia com o smarphone. 
           Então fique a vontade para explorar a aba das <Link to='/fotografias'><b className='desc-home-link'>fotos</b></Link>, 
-          e para conhecer um pouco mais o site acesse a página <Link to='/sobre'><b className='desc-home-link'>sobre</b></Link>.
+          e para conhecer um pouco mais do site acesse a página <Link to='/sobre'><b className='desc-home-link'>sobre</b></Link>.
         </p>
         <div className="rodape">
           <div className="contato">

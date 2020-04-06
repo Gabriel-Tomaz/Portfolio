@@ -19,6 +19,9 @@
   align-items: center;
   justify-content: space-around;
 }
+.menu a{
+  text-decoration: none;
+}
 .menu p{
   width: 150px;
   height: 50px;
@@ -48,6 +51,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  color: #FFF;
 }
 a{
   text-decoration: none;
@@ -74,4 +78,21 @@ a{
 .rodape .titleRodape{
   color: #FFF;
   font-size: 0.9em;
+}
+
+@media all and (min-width: 10px) and (max-width: 767px) and (orientation: portrait){
+  .desc{
+    width: 90%;
+    text-align: justify;
+  }
+  .rodape{
+    height: 15vh;
+    font-size: 1em;
+  }
+  .contato{
+    width: 90%;
+  }
+  .menu{
+    display: none;
+  }
 }

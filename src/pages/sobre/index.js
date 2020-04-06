@@ -19,9 +19,9 @@ export default function Sobre(){
        <section className='sobre'>
        <div className="topBarFotos">
           <Link to="/">
-            <MdKeyboardArrowLeft size="60px" color="#FFF" className="back-icon" />
+            <MdKeyboardArrowLeft  color="#FFF" className="back-icon" />
           </Link>
-          <p className="title-page">fotografias</p>
+          < p className="title-page">Sobre</p>
         </div>
         <h1 className='title-sobre'>Sobre este site</h1>
          <p className='desc-sobre'>
