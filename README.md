@@ -15,8 +15,8 @@ e elegante.
 
 Tô usando um novo pacote npm que é voltado para galerias de imagens, agora a listagem das fotos tá mais organizada e responsiva, além do quê esse pacote adiciona a pocibilidade de clicar nas fotos para abrilas em tela cheia. O link pra ele tá aqui em baixa.
 
-*https://www.npmjs.com/package/react-photo-gallery
+* https://www.npmjs.com/package/react-photo-gallery
 
 Tô usando também o react-bootstrap, más é só pra criar um menu na tela inicial da versão mobile. É esse DropdownButton aí, link também tá aqui em baixo.
 
-*https://react-bootstrap.github.io/components/dropdowns/
+* https://react-bootstrap.github.io/components/dropdowns/
