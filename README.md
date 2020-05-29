@@ -20,3 +20,7 @@ Tô usando um novo pacote npm que é voltado para galerias de imagens, agora a l
 Tô usando também o react-bootstrap, más é só pra criar um menu na tela inicial da versão mobile. É esse DropdownButton aí, link também tá aqui em baixo.
 
 * https://react-bootstrap.github.io/components/dropdowns/
+
+## Atualização 29/05
+
+Vou mudar tudo de novo!
