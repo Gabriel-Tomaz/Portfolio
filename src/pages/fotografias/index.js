@@ -5,7 +5,6 @@ import Gallery from 'react-photo-gallery';
 import Carousel,{ Modal,ModalGateway } from 'react-images';
 
 import api from '../../services/api';
-import './fotografias.css';
 
 export default function Fotografias(){
   const [imagemAtual,setImagemAtual] = useState(0);
@@ -22,7 +21,8 @@ export default function Fotografias(){
   }
 
   const [fotos,setFotos] = useState([]);
-  const apiUrl ='users/negoh_jpg/photos/';
+  const apiUrl ='users/gabriel_tomaz/photos/';
+  //?client_id=D0LBzLz8h7rEBO9VM2sMeJefIQfaeq4IHBxNmH7_ips
 
   useEffect(() => {
     api.get(apiUrl).then(response => {

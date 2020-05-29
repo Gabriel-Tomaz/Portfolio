@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { DropdownButton,Dropdown } from 'react-bootstrap';
+import {FaGit, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
 
-import './home.css';
-import MenuMobile from '../../components/menuMobile';
+import './styles.css';
 
 export default function Home(){
   const instagramLink = 'https://www.instagram.com/negoh.css/';
@@ -17,38 +15,39 @@ export default function Home(){
   return(
     <div className="main">
       <section className="home">
-        <div className="topBar">
-          <p className="title-topBar">Gabriel Tomaz</p>
-          <div className="menu">
-            <Link to="/fotografias">
-              <p>Fotografias</p>
-            </Link>
-            <Link to="/sobre">
-              <p>Sobre</p>
-            </Link>
-          </div>
-          <MenuMobile/>
-        </div>
-        <p className="desc">
-            Olá meu nome é Gabriel e esse é o meu portfólio de fotografias autorais, 
-          eu o desenvolvi como uma forma de aplicar conhecimentos na minha área de estudos e 
-          expor um pouco desse meu hobby que é a fotografia com o smarphone. 
-          Então fique a vontade para explorar a aba das <Link to='/fotografias'><b className='desc-home-link'>fotos</b></Link>, 
-          e para conhecer um pouco mais do site acesse a página <Link to='/sobre'><b className='desc-home-link'>sobre</b></Link>.
+      <div className="abstract">
+        <h1 className="abstract-title">Gabriel</h1>
+        <p className="abstract-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        <div className="rodape">
-          <div className="contato">
-            <a onClick={() => abrirLink(instagramLink)} title='Instagram'>
-              <p className="title-link">Instagram</p>
-            </a>
-            <a onClick={() => abrirLink(linkedinLink)} title='Linkedin'>
-              <p className="title-link">Linkedin</p>
-            </a>
-            <a onClick={() => abrirLink(githubLink)} title='Github'>
-              <p className="title-link">Github</p>
-            </a>
+        <div className="social">
+          <a onClick={() => abrirLink(instagramLink)} title='Instagram'>
+            <FaInstagram size={25} color="#84A98C" />
+          </a>
+          <a onClick={() => abrirLink(githubLink)} title='Github'>
+              <FaGit size={25} color="#84A98C" />
+          </a>
+          <a onClick={() => abrirLink(linkedinLink)} title='Linkedin'>
+            <FaLinkedinIn size={25} color="#84A98C" />
+          </a>
+        </div>
+      </div>
+      <div className="about">
+          <div className="about-image profile-image"></div>
+          <div className="about-card">
+            <h1 className="about-card-title">Sobre mim</h1>
+            <p className="about-card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <p className="titleRodape">2020 Gabriel Tomaz ©</p>
+          <div className="about-card">
+            <h1 className="about-card-title">Sobre as fotos</h1>
+            <p className="about-card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button className="about-card-button">Mais fotos</button>
+          </div>
+          <div className="about-image portfolio-image"></div>
         </div>
       </section>
     </div>

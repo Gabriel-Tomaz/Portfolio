@@ -1,0 +1,127 @@
+@import '../../main.scss';
+
+.home{
+    @extend .main;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.abstract{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .abstract-title{
+        width: 60%;
+        font-size: 4em;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+    .abstract-text{
+        width: 60%;
+        color: $font-color;
+        margin-top: 10px;
+    }
+    .social{
+        width: 27%;
+        display: flex;
+        align-items: center; 
+        position: absolute;
+        bottom: 30px;
+        left: 9%;
+
+        a{
+            opacity: 0.5;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            &:hover{
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+
+        a:nth-child(2){
+            margin-left: 20px;
+        }
+        a:nth-child(3){
+            margin-left: 20px;
+        }
+
+    }
+    
+}
+.about{
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    .about-image{
+        width: 45%;
+        height: 65vh;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .profile-image{
+        background-image: url(../../assets/img/profile.jpg);
+    }
+    .portfolio-image{
+        background-image: url(../../assets/img/portfolio.jpeg);
+    }
+}
+
+.about-card{
+    width: 45%;
+    height: 35vh;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-start;
+    color: $primary-color;
+
+    .about-card-title{
+        width: 75%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .about-card-text{
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .about-card-button{
+        width: 22%;
+        height: 30px;
+        font-weight: bold;
+        color: #FFF;
+        font-size: 0.55em;
+        text-transform: uppercase;
+        margin-top: 12px;
+        margin-left: 40px;
+        background-color: $primary-color;
+        border: solid 2px $border-color;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        box-shadow: 1px 3px 6px rgba(0,0,0,0.2);
+
+        &:active{
+            transform: scale(1.01);
+        }
+    }
+}
