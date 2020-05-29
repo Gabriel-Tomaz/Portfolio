@@ -29,7 +29,7 @@ Não criei um novo protótipo no figma e alterei toda a interface novamente.
 
 vou deixar listados aqui todos os protótipos, foram três versões.
 
-#### V1 - * https://www.figma.com/file/uBXys76x8ddYDY9h7lGxnF/Portfolio-V1
-#### V2 - * https://www.figma.com/file/p4T2i0qp1eGDA8nhkPiup4/Portfolio-V2
-#### V3 - * https://www.figma.com/file/W38Bi1rScZrHGOP61lXBAk/Portfolio-V3
+#### V1 - https://www.figma.com/file/uBXys76x8ddYDY9h7lGxnF/Portfolio-V1
+#### V2 - https://www.figma.com/file/p4T2i0qp1eGDA8nhkPiup4/Portfolio-V2
+#### V3 - https://www.figma.com/file/W38Bi1rScZrHGOP61lXBAk/Portfolio-V3
 
