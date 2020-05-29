@@ -25,7 +25,7 @@ Tô usando também o react-bootstrap, más é só pra criar um menu na tela inic
 
 Vou mudar tudo de novo!
 
-Não criei um novo protótipo no figma e alterei toda a interface novamente.
+Criei um novo protótipo no figma e alterei toda a interface novamente.
 
 vou deixar listados aqui todos os protótipos, foram três versões.
 
