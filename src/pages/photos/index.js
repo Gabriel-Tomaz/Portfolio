@@ -2,6 +2,7 @@ import React, { useState,useEffect,useCallback } from 'react';
 import Gallery from 'react-photo-gallery';
 import Carousel,{ Modal,ModalGateway } from 'react-images';
 
+import './style.css';
 import api from '../../services/api';
 
 export default function Fotografias(){
@@ -57,6 +58,9 @@ export default function Fotografias(){
   return(
     <section className="photos">
       <div className="photos-list">
+        <div className="photos-top-bar">
+          <h1 className="photos-title">Fotografias</h1>
+        </div>
         <Gallery photos={ 
           photos.map(photo => ({
             src: photo.urls.regular,

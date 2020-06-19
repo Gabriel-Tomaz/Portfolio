@@ -46,13 +46,12 @@ export default function Home(){
             <p className="about-card-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button className="about-card-button">Mais fotos</button>
           </div>
           <div className="about-image portfolio-image"></div>
         </div>
       </section>
 
-        <Photos />
+      <Photos />
     </div>
   );
 }
