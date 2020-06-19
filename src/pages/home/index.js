@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaGit, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
 
+import Photos from '../photos';
 import './styles.css';
 
 export default function Home(){
@@ -21,15 +22,15 @@ export default function Home(){
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <div className="social">
-          <a onClick={() => abrirLink(instagramLink)} title='Instagram'>
-            <FaInstagram size={25} color="#84A98C" />
-          </a>
-          <a onClick={() => abrirLink(githubLink)} title='Github'>
-              <FaGit size={25} color="#84A98C" />
-          </a>
-          <a onClick={() => abrirLink(linkedinLink)} title='Linkedin'>
-            <FaLinkedinIn size={25} color="#84A98C" />
-          </a>
+          <p className="abstract-link" className="abstract-link" onClick={() => abrirLink(instagramLink)} title='Instagram'>
+            <FaInstagram size={25} color="#CAD2C5" />
+          </p>
+          <p className="abstract-link" href=" " onClick={() => abrirLink(githubLink)} title='Github'>
+              <FaGit size={25} color="#CAD2C5" />
+          </p>
+          <p className="abstract-link" href=" " onClick={() => abrirLink(linkedinLink)} title='Linkedin'>
+            <FaLinkedinIn size={25} color="#CAD2C5" />
+          </p>
         </div>
       </div>
       <div className="about">
@@ -50,6 +51,8 @@ export default function Home(){
           <div className="about-image portfolio-image"></div>
         </div>
       </section>
+
+        <Photos />
     </div>
   );
 }

@@ -19,7 +19,7 @@
         width: 60%;
         font-size: 4em;
         text-transform: uppercase;
-        color: $secondary-color;
+        color: $font-color;
         font-weight: bold;
     }
     .abstract-text{
@@ -35,7 +35,7 @@
         bottom: 30px;
         left: 9%;
 
-        a{
+        .abstract-link{
             opacity: 0.5;
             transition: all 0.2s;
             cursor: pointer;
@@ -46,10 +46,10 @@
             }
         }
 
-        a:nth-child(2){
+        .abstract-link:nth-child(2){
             margin-left: 20px;
         }
-        a:nth-child(3){
+        .abstract-link:nth-child(3){
             margin-left: 20px;
         }
 
