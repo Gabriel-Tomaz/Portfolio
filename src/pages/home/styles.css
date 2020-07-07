@@ -10,8 +10,6 @@ body {
 
 .main, .home {
   width: 100%;
-  min-width: 960px;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,9 +27,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 .abstract {
@@ -54,20 +50,26 @@ body {
 
 .abstract .abstract-title {
   width: 60%;
-  font-size: 4em;
+  font-size: 4rem;
   text-transform: uppercase;
   color: #CAD2C5;
   font-weight: bold;
+  -webkit-animation: arise 2s;
+          animation: arise 2s;
 }
 
 .abstract .abstract-text {
   width: 60%;
+  line-height: 20px;
   color: #CAD2C5;
   margin-top: 10px;
+  font-size: 1rem;
+  text-align: justify;
+  -webkit-animation: arise 2s;
+          animation: arise 2s;
 }
 
 .abstract .social {
-  width: 27%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,6 +79,8 @@ body {
   position: absolute;
   bottom: 30px;
   left: 9%;
+  -webkit-animation: arise 2s;
+          animation: arise 2s;
 }
 
 .abstract .social .abstract-link {
@@ -120,6 +124,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow: hidden;
 }
 
 .about .about-image {
@@ -128,6 +133,8 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  -webkit-animation: transition-arise-right 1.5s;
+          animation: transition-arise-right 1.5s;
 }
 
 .about .profile-image {
@@ -136,6 +143,11 @@ body {
 
 .about .portfolio-image {
   background-image: url(../../assets/img/portfolio.jpeg);
+}
+
+.about-image:nth-child(1) {
+  -webkit-animation: transition-arise-left 1.5s;
+          animation: transition-arise-left 1.5s;
 }
 
 .about-card {
@@ -158,43 +170,147 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #2F3E46;
+  -webkit-animation: transition-arise-top 1.5s;
+          animation: transition-arise-top 1.5s;
 }
 
 .about-card .about-card-title {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .about-card .about-card-text {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 10px;
 }
 
-.about-card .about-card-button {
-  width: 22%;
-  height: 30px;
-  font-weight: bold;
-  color: #FFF;
-  font-size: 0.55em;
-  text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 40px;
-  background-color: #2F3E46;
-  border: solid 2px #232F38;
-  border-radius: 2px;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+.about-card:nth-child(2) {
+  -webkit-animation: transition-arise-bottom 1.5s;
+          animation: transition-arise-bottom 1.5s;
 }
 
-.about-card .about-card-button:active {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+@-webkit-keyframes arise {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arise {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition-arise-right {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: -20%;
+  }
+  100% {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes transition-arise-right {
+  0% {
+    opacity: 0;
+    position: relative;
+    right: -20%;
+  }
+  100% {
+    position: relative;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition-arise-left {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -20%;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes transition-arise-left {
+  0% {
+    opacity: 0;
+    position: relative;
+    left: -20%;
+  }
+  100% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition-arise-top {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: -100%;
+  }
+  100% {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes transition-arise-top {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: -100%;
+  }
+  100% {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition-arise-bottom {
+  0% {
+    opacity: 0;
+    position: relative;
+    bottom: -100%;
+  }
+  100% {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes transition-arise-bottom {
+  0% {
+    opacity: 0;
+    position: relative;
+    bottom: -100%;
+  }
+  100% {
+    position: relative;
+    bottom: 0;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

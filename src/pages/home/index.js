@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaGit, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
+import {Transition} from 'react-spring/renderprops';
 
 import Photos from '../photos';
 import './styles.css';
@@ -17,9 +18,9 @@ export default function Home(){
     <div className="main">
       <section className="home">
       <div className="abstract">
-        <h1 className="abstract-title">Gabriel</h1>
+        <h1 className="abstract-title">Gabriel</h1>          
         <p className="abstract-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Este é meu portfolio de fotos. A fotografia é um hobby ao qual dediquei-me bastante e que me rendeu momentos e registros incríveis. Todas as fotos listadas abaixo foram feitas e editadas em um Smartphone.
         </p>
         <div className="social">
           <p className="abstract-link" className="abstract-link" onClick={() => abrirLink(instagramLink)} title='Instagram'>
@@ -36,17 +37,17 @@ export default function Home(){
       <div className="about">
           <div className="about-image profile-image"></div>
           <div className="about-card">
-            <h1 className="about-card-title">Sobre mim</h1>
+            <h2 className="about-card-title">Sobre mim</h2>
             <p className="about-card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Olá meu nome é Gabriel, eu estou cursando ADS no IF Cajazeiras. Minha aréa de estudos é o <b>Front End</b> e estou começando no <b>UI/UX Design</b>. 
             </p>
           </div>
-          <div className="about-card">
-            <h1 className="about-card-title">Sobre as fotos</h1>
-            <p className="about-card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
+            <div className="about-card">
+              <h2 className="about-card-title">Sobre as fotos</h2>
+              <p className="about-card-text">
+                Minhas fotos são como uma parte de mim, nelas eu tento passar um pouco do meu olhar, a forma como enxergo o mundo.
+              </p>
+            </div>
           <div className="about-image portfolio-image"></div>
         </div>
       </section>

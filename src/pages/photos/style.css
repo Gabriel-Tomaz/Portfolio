@@ -10,8 +10,6 @@ body {
 
 .main, .photos {
   width: 100%;
-  min-width: 960px;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

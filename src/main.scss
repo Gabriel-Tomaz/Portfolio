@@ -13,9 +13,18 @@ body{
 }
 .main{
     width: 100%;
-    min-width: 960px;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background: #757575;
 }

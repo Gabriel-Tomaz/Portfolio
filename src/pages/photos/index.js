@@ -14,7 +14,7 @@ export default function Fotografias(){
   const [totalPage, setTotalPage] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  const apiUrl = ``;
+  const apiUrl = `users/gabriel_tomaz/photos/?client_id=D0LBzLz8h7rEBO9VM2sMeJefIQfaeq4IHBxNmH7_ips&page=${page}`;
 
 
   function handleScroll(){
@@ -53,8 +53,6 @@ export default function Fotografias(){
     setOpeningImage(false);
   }
 
-  console.log(photos);
-
   return(
     <section className="photos">
       <div className="photos-list">
@@ -75,7 +73,7 @@ export default function Fotografias(){
                 currentIndex={ currentImage } 
                 views={photos.map(photo => ({
                   ...photo,
-                  src: photo.urls.full,
+                  src: photo.urls.regular,
                   caption: photo.title
                 }))}></Carousel>
             </Modal>

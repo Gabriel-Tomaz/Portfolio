@@ -10,8 +10,6 @@ body {
 
 .main {
   width: 100%;
-  min-width: 960px;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,5 +19,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #757575;
 }
 /*# sourceMappingURL=main.css.map */
