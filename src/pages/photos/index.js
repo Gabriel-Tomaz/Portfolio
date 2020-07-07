@@ -10,7 +10,7 @@ export default function Fotografias(){
   const [openingImage,setOpeningImage] = useState(false);
   const [photos,setPhotos] = useState([]);
   const [page,setPage] = useState(1);
-  const [photoPage,setPhotoPage] = useState(10);
+  const [photoPage] = useState(10);
   const [totalPage, setTotalPage] = useState(0);
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,6 @@ export default function Fotografias(){
       document.documentElement.offsetHeight || page === totalPage || loading){
         return;
       }
-
       setPage(page + 1);
   }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import {FaGit, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
-import {Transition} from 'react-spring/renderprops';
 
 import Photos from '../photos';
+import Footer from '../../components/footer';
 import './styles.css';
 
 export default function Home(){
@@ -23,7 +23,7 @@ export default function Home(){
         Este é meu portfolio de fotos. A fotografia é um hobby ao qual dediquei-me bastante e que me rendeu momentos e registros incríveis. Todas as fotos listadas abaixo foram feitas e editadas em um Smartphone.
         </p>
         <div className="social">
-          <p className="abstract-link" className="abstract-link" onClick={() => abrirLink(instagramLink)} title='Instagram'>
+          <p className="abstract-link" onClick={() => abrirLink(instagramLink)} title='Instagram'>
             <FaInstagram size={25} color="#CAD2C5" />
           </p>
           <p className="abstract-link" href=" " onClick={() => abrirLink(githubLink)} title='Github'>
@@ -53,6 +53,7 @@ export default function Home(){
       </section>
 
       <Photos />
+      <Footer />
     </div>
   );
 }
