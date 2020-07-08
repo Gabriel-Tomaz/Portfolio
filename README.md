@@ -33,3 +33,10 @@ vou deixar listados aqui todos os protótipos, foram três versões.
 #### V2 - https://www.figma.com/file/p4T2i0qp1eGDA8nhkPiup4/Portfolio-V2
 #### V3 - https://www.figma.com/file/W38Bi1rScZrHGOP61lXBAk/Portfolio-V3
 
+## Atualização 08/07
+
+A versão 1 do projeto foi concluida e pode ser acessada em http://gabriel-tomaz.github.io .
+A forma final dessa versão é essa: 
+
+<img src="<img src="https://github.com/Gabriel-Tomaz/test-frontend-ciclic/blob/master/screenshots/Result.png">
+#### Tela inicial do site.
