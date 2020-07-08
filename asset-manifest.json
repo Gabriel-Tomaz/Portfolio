@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Gabriel-Tomaz/static/css/main.65857889.chunk.css",
-    "main.js": "/Gabriel-Tomaz/static/js/main.4bd3c12f.chunk.js",
-    "main.js.map": "/Gabriel-Tomaz/static/js/main.4bd3c12f.chunk.js.map",
-    "runtime-main.js": "/Gabriel-Tomaz/static/js/runtime-main.56f6cb98.js",
-    "runtime-main.js.map": "/Gabriel-Tomaz/static/js/runtime-main.56f6cb98.js.map",
-    "static/js/2.49bd9f21.chunk.js": "/Gabriel-Tomaz/static/js/2.49bd9f21.chunk.js",
-    "static/js/2.49bd9f21.chunk.js.map": "/Gabriel-Tomaz/static/js/2.49bd9f21.chunk.js.map",
-    "index.html": "/Gabriel-Tomaz/index.html",
-    "precache-manifest.37901bd929720afb0f1407f450bf8b93.js": "/Gabriel-Tomaz/precache-manifest.37901bd929720afb0f1407f450bf8b93.js",
-    "service-worker.js": "/Gabriel-Tomaz/service-worker.js",
-    "static/css/main.65857889.chunk.css.map": "/Gabriel-Tomaz/static/css/main.65857889.chunk.css.map",
-    "static/js/2.49bd9f21.chunk.js.LICENSE.txt": "/Gabriel-Tomaz/static/js/2.49bd9f21.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/Gabriel-Tomaz/static/media/profile.db8f62fd.jpg"
+    "main.css": "/Gabriel-Tomaz/Portfolio/static/css/main.d11b2390.chunk.css",
+    "main.js": "/Gabriel-Tomaz/Portfolio/static/js/main.4bd3c12f.chunk.js",
+    "main.js.map": "/Gabriel-Tomaz/Portfolio/static/js/main.4bd3c12f.chunk.js.map",
+    "runtime-main.js": "/Gabriel-Tomaz/Portfolio/static/js/runtime-main.e0c4ab4a.js",
+    "runtime-main.js.map": "/Gabriel-Tomaz/Portfolio/static/js/runtime-main.e0c4ab4a.js.map",
+    "static/js/2.49bd9f21.chunk.js": "/Gabriel-Tomaz/Portfolio/static/js/2.49bd9f21.chunk.js",
+    "static/js/2.49bd9f21.chunk.js.map": "/Gabriel-Tomaz/Portfolio/static/js/2.49bd9f21.chunk.js.map",
+    "index.html": "/Gabriel-Tomaz/Portfolio/index.html",
+    "precache-manifest.0484c9ce5a44ebea028a2d7afb72f94b.js": "/Gabriel-Tomaz/Portfolio/precache-manifest.0484c9ce5a44ebea028a2d7afb72f94b.js",
+    "service-worker.js": "/Gabriel-Tomaz/Portfolio/service-worker.js",
+    "static/css/main.d11b2390.chunk.css.map": "/Gabriel-Tomaz/Portfolio/static/css/main.d11b2390.chunk.css.map",
+    "static/js/2.49bd9f21.chunk.js.LICENSE.txt": "/Gabriel-Tomaz/Portfolio/static/js/2.49bd9f21.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/Gabriel-Tomaz/Portfolio/static/media/profile.db8f62fd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56f6cb98.js",
+    "static/js/runtime-main.e0c4ab4a.js",
     "static/js/2.49bd9f21.chunk.js",
-    "static/css/main.65857889.chunk.css",
+    "static/css/main.d11b2390.chunk.css",
     "static/js/main.4bd3c12f.chunk.js"
   ]
 }
