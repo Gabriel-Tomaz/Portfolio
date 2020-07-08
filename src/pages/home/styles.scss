@@ -1,11 +1,11 @@
 @import '../../main.scss';
 
+
 .home{
     @extend .main;
     height: 100vh;
     flex-direction: row;
     overflow-x: hidden;
- 
 }
 
 .abstract{
@@ -40,6 +40,7 @@
         bottom: 30px;
         left: 9%;
         animation: arise 2s;
+        font-size: 25px;
 
         .abstract-link{
             opacity: 0.5;
@@ -187,4 +188,43 @@
         opacity: 1;
     }
 
+}
+
+@media all and (min-width: 10px) and (max-width: 767px){
+    .abstract{
+        width: 100%;
+
+        .abstract-title{
+            width: 80%;
+        }
+        .abstract-text{
+            width: 80%;
+        }
+
+        .social{ 
+            width: 80%;
+            justify-content: flex-start;
+            position: absolute;
+            font-size: 32px;
+            bottom: 20px;
+            left: 10%;
+    
+            .abstract-link{
+                opacity: 1;
+                transition: all 0.2s;
+                cursor: pointer;
+            }
+    
+            .abstract-link:nth-child(2){
+                margin-left: 50px;
+            }
+            .abstract-link:nth-child(3){
+                margin-left: 50px;
+            }
+    
+        }
+    }
+    .about{
+        display: none;
+    }
 }

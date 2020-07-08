@@ -4,10 +4,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-body {
-  background-color: #2F3E46;
-}
-
 .main, .photos {
   width: 100%;
   display: -webkit-box;
@@ -76,5 +72,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #CAD2C5;
+}
+
+@media all and (min-width: 10px) and (max-width: 767px) {
+  .photos-top-bar {
+    width: 98%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

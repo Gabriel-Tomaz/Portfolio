@@ -25,3 +25,9 @@
         color: $font-color;
     }
 }
+
+@media all and (min-width: 10px) and (max-width: 767px){
+    .photos-top-bar{
+        width: 98%;
+    }
+}
