@@ -38,5 +38,5 @@ vou deixar listados aqui todos os protótipos, foram três versões.
 A versão 1 do projeto foi concluida e pode ser acessada em http://gabriel-tomaz.github.io .
 A forma final dessa versão é essa: 
 
-<img src="https://github.com/Gabriel-Tomaz/Portfolio/blob/master/screenshots/portfolio.gif">
-#### Tela inicial do site.
+<img src="https://github.com/Gabriel-Tomaz/Portfolio/blob/master/screenshots/portfolio.gif"> 
+Tela inicial do site.
